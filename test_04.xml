@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+	<title>Хабрахабр / Лучшие за сутки / Посты</title>
+	<link>http://habrahabr.ru/rss/best/</link>
+	<description><![CDATA[Лучшие посты за последние 24 часа]]></description>
+	<language>ru</language>
+	<managingEditor>editor@habrahabr.ru</managingEditor>
+	<generator>habrahabr.ru</generator>
+	<pubDate>Sun, 04 Aug 2013 23:19:48 GMT</pubDate>
+	<lastBuildDate></lastBuildDate>
+	<image>
+		<link>http://habrahabr.ru/</link>
+		<url>http://habrahabr.ru/i/logo.gif</url>
+		<title>Хабрахабр</title>
+	</image>
+					<item>
+		<title><![CDATA[Создание умного домофона с автоответчиком и Интернет-соединением]]></title>
+		<guid isPermaLink="true">http://habrahabr.ru/post/188906/</guid>
+		<link>http://habrahabr.ru/post/188906/</link>
+		<description><![CDATA[Не так давно я чинил домофонную трубку и задумался — а не сделать ли мне небольшую модернизацию? Научить его уведомлять меня через Интернет о том, что кто-то приходил или даже удалённо открывать дверь с мобильного телефона… А затем я решил — почему бы вообще не сделать автоответчик? На телефонах сейчас автоответчик уже мало кому нужен, а вот знать, кто же ко мне приходил, было бы весьма полезно, особенно при том, что я не привык брать трубку, если никого не жду. Воплотить идею в реальность оказалось не так уж сложно.<br/>
+ <a href="http://habrahabr.ru/post/188906/#habracut">Читать дальше &rarr;</a>]]></description>
+		
+		<pubDate>Sun, 04 Aug 2013 00:16:16 GMT</pubDate>
+		<author>ClusterM</author>
+		<category><![CDATA[Программинг микроконтроллеров]]></category><category><![CDATA[DIY или Сделай Сам]]></category>
+		<category><![CDATA[avr]]></category><category><![CDATA[домофон]]></category><category><![CDATA[звук]]></category><category><![CDATA[автоответчик]]></category><category><![CDATA[умный дом]]></category>
+	</item>
+
+		<item>
+		<title><![CDATA[Kickstarter запретил ГМО]]></title>
+		<guid isPermaLink="true">http://habrahabr.ru/post/188936/</guid>
+		<link>http://habrahabr.ru/post/188936/</link>
+		<description><![CDATA[В минувшую среду известный краудфандинговый сайт Kickstarter внёс изменения в <a href="http://www.kickstarter.com/help/guidelines">правила</a> своей работы. К числу запрещённых проектов на сайте добавлены проекты с ГМО (генетически модифицированными организмами). Это произошло всего через пару недель после того, как компания Glowing Plants собрала <a href="http://www.kickstarter.com/projects/antonyevans/glowing-plants-natural-lighting-with-no-electricit">$484 тыс.</a> на разработку светящихся растений. <br/>
+<br/>
+<img src="http://habrastorage.org/storage2/5b5/aaf/2b3/5b5aaf2b32aa214265cc25f49d206e10.jpg"/><br/>
+ <a href="http://habrahabr.ru/post/188936/#habracut">Читать дальше &rarr;</a>]]></description>
+		
+		<pubDate>Sun, 04 Aug 2013 11:14:26 GMT</pubDate>
+		<author>alizar</author>
+		<category><![CDATA[Краудфандинг]]></category><category><![CDATA[Биотехнологии]]></category>
+		<category><![CDATA[ГМО]]></category><category><![CDATA[генетика]]></category><category><![CDATA[Kickstarter]]></category><category><![CDATA[Glowing Plants]]></category><category><![CDATA[светящиеся растения]]></category>
+	</item>
+
+		<item>
+		<title><![CDATA[Полиция нашла пиратское ПО на компьютерах Роскомнадзора, или где наше СПО?]]></title>
+		<guid isPermaLink="true">http://habrahabr.ru/post/188940/</guid>
+		<link>http://habrahabr.ru/post/188940/</link>
+		<description><![CDATA[<blockquote>В офисе Енисейского управления Роскомнадзора полиция обнаружила пиратские программы «1С», Adobe, Corel, Microsoft и Autodesk. Роскомнадзор — уполномоченный госорган по исполнению «анитипиратского закона» № 187-ФЗ. <br/>
+<br/>
+В результате проверки полицией из Енисейского управления было изъято пять компьютеров.<br/>
+<br/>
+По данным ведомства, поступившим в Роскомнадзор из правоохранительных органов Красноярского края, на двух изъятых компьютерах обнаружены нелицензионные копии программы Photoshop.<br/>
+</blockquote><br/>
+Подробнее: <a href="http://gov.cnews.ru/top/2013/08/02/policiya_nashla_piratskoe_po_na_kompyuterah_roskomnadzora_537687">gov.cnews.ru/top/2013/08/02/policiya_nashla_piratskoe_po_na_kompyuterah_roskomnadzora_537687</a><br/>
+<br/>
+Под катом хочется подумать над тем как жить дальше и где же наше СПО…<br/>
+ <a href="http://habrahabr.ru/post/188940/#habracut">Читать дальше &rarr;</a>]]></description>
+		
+		<pubDate>Sun, 04 Aug 2013 12:13:57 GMT</pubDate>
+		<author>suslayer</author>
+		<category><![CDATA[ИТ-Инфраструктура]]></category>
+		<category><![CDATA[duralex]]></category><category><![CDATA[роскомнадзор]]></category><category><![CDATA[нелицензионное по]]></category><category><![CDATA[госучреждения.]]></category>
+	</item>
+
+		<item>
+		<title><![CDATA[Основатель Freedom Hosting арестован в Ирландии и ждет экстрадиции в США]]></title>
+		<guid isPermaLink="true">http://habrahabr.ru/post/188914/</guid>
+		<link>http://habrahabr.ru/post/188914/</link>
+		<description><![CDATA[<img src="http://habr.habrastorage.org/post_images/e66/472/0fb/e664720fbbabc8f4cd8f61ac96c584b5.jpg" alt="image" align="left"/> Основатель Tor Freedom Hosting, 28-летний Эрик Оуэн Маркес, был арестован в Ирландии. Власти США добиваются его экстрадиции, суду он был представлен как «крупнейший посредник распространения детской порнографии на планете».<br/>
+<br/>
+Маркес, имеющий двойное гражданство Ирландии и США, был арестован на основании ордера штата Мэриленд, в котором он обвиняется в распространении и продвижении детской порнографии в интернете. Имеются сведения, что он позволял поставщикам контента продолжать размещать запрещенные фотографии на своих серверах несмотря на то, что неоднократно получал предупреждения. У ФБР ушел год на установление его местонахождения.<br/>
+ <a href="http://habrahabr.ru/post/188914/#habracut">Читать дальше &rarr;</a>]]></description>
+		
+		<pubDate>Sun, 04 Aug 2013 07:58:57 GMT</pubDate>
+		<author>HotWaterMusic</author>
+		<category><![CDATA[Информационная безопасность]]></category>
+		<category><![CDATA[free hosting]]></category>
+	</item>
+
+		<item>
+		<title><![CDATA[Об одной изящной конструкции]]></title>
+		<guid isPermaLink="true">http://habrahabr.ru/post/188160/</guid>
+		<link>http://habrahabr.ru/post/188160/</link>
+		<description><![CDATA[<h4>Введение</h4><br/>
+Начну статью с того, что расскажу, как я познакомился с этой изящной конструкцией. Занимаясь олимпиадным программированием, мы с моим преподавателем решали много интересных задач. И вот однажды мне попалась следующая задача:<br/>
+<br/>
+<i><b>Распечатать в порядке возрастания все несократимые дроби, знаменатель которых не превосходит n, n&lt;=100.</b></i><br/>
+<br/>
+Прочитав условие задачи до конца, она не показалась мне сложной (она таковой и не является). Первое, что пришло мне в голову это просто перебрать все знаменатели от 2 до n и для каждого знаменателя перебрать числители от 1 до знаменателя, при условии, что числитель и знаменатель взаимно просты. Ну, а за тем отсортировать их по возрастанию.<br/>
+<br/>
+Такое решение верно и задача прошла все назначенные ей тесты. Однако, мой преподаватель сказал, что задачу можно решить намного красивее (он уже сталкивался с этой конструкцией). Так я и познакомился с этой замечательной конструкцией — <i><b>деревом Штерна-Броко.</b></i><br/>
+ <a href="http://habrahabr.ru/post/188160/#habracut">Читать дальше &rarr;</a>]]></description>
+		
+		<pubDate>Sun, 04 Aug 2013 20:00:18 GMT</pubDate>
+		<author>timyrik20</author>
+		<category><![CDATA[Математика]]></category><category><![CDATA[C#]]></category><category><![CDATA[Алгоритмы]]></category>
+		<category><![CDATA[деревья]]></category><category><![CDATA[структуры данных]]></category><category><![CDATA[алгоритмы]]></category><category><![CDATA[дроби]]></category><category><![CDATA[дерево Штерна-Броко]]></category>
+	</item>
+
+		<item>
+		<title><![CDATA[Исходный код Second Reality передан в общественное достояние]]></title>
+		<guid isPermaLink="true">http://habrahabr.ru/post/188904/</guid>
+		<link>http://habrahabr.ru/post/188904/</link>
+		<description><![CDATA[Пару дней назад Mika Tuomi, известный как Trug, <a href="https://github.com/mtuomi/SecondReality">передал</a> исходный код Second Reality в общественное достояние.<br/>
+<br/>
+<iframe width="560" height="349" src="//www.youtube.com/embed/xXN-mC1HEmg?wmode=opaque" frameborder="0" allowfullscreen></iframe><br/>
+<br/>
+Second Reality — это демо, занявшее первое место на демопати Assembly '93. Оно было создано командой Future Crew, которая на тот момент состояла из 12-ти человек. Впоследствии ее члены основали такие компании как Futuremark и Remedy Entertainment. Считается, что это демо оказало огромное влияние на развитие демосцены.<br/>
+<br/>
+<a href="http://en.wikipedia.org/wiki/Future_Crew">Статья о Future Crew в Википедии (англ.)</a><br/>
+<a href="http://ru.wikipedia.org/wiki/Second_reality">Статья о Second Reality в Википедии</a><br/>
+<a href="ftp://ftp.scene.org/pub/mirrors/hornet/demos/1993/0-9/2ndreal.zip">Бинарники</a><br/>
+<a href="https://github.com/mtuomi/SecondReality">Исходный код на Гитхабе</a> <a href="http://habrahabr.ru/post/188904/#habracut"></a>]]></description>
+		
+		<pubDate>Sat, 03 Aug 2013 23:58:17 GMT</pubDate>
+		<author>powder96</author>
+		<category><![CDATA[Assembler]]></category><category><![CDATA[Демосцена]]></category><category><![CDATA[Open source]]></category>
+		<category><![CDATA[second reality]]></category><category><![CDATA[future crew]]></category><category><![CDATA[demo]]></category><category><![CDATA[assembly]]></category><category><![CDATA[open source]]></category>
+	</item>
+
+		<item>
+		<title><![CDATA[Субъективные заметки об OpenPandora: блеск и нищета open source]]></title>
+		<guid isPermaLink="true">http://habrahabr.ru/post/188946/</guid>
+		<link>http://habrahabr.ru/post/188946/</link>
+		<description><![CDATA[Хотя о карманном компьютере (или портативной консоли, кому как нравится) Pandora написано уже немало, я решил добавить в копилку свои впечатления от этого весьма интересного устройства. К тому же на Хабре «Пандора» пока что упоминалась лишь вскользь. Стало быть, неплохо бы исправить упущение. Обзор — не мой жанр, так что сразу перейду к вещам, на мой взгляд, наиболее существенным.<br/>
+<br/>
+<img src="http://habr.habrastorage.org/post_images/d68/983/ce2/d68983ce2f7aaec71a1a75196773cf72.jpg"/><br/>
+ <a href="http://habrahabr.ru/post/188946/#habracut">Читать дальше &rarr;</a>]]></description>
+		
+		<pubDate>Sun, 04 Aug 2013 14:07:24 GMT</pubDate>
+		<author>rg_software</author>
+		<category><![CDATA[Игровые приставки]]></category><category><![CDATA[Железо]]></category><category><![CDATA[Гаджеты. Устройства для гиков]]></category>
+		<category><![CDATA[OpenPandora]]></category><category><![CDATA[Pandora]]></category><category><![CDATA[карманные компьютеры]]></category><category><![CDATA[игровые консоли]]></category><category><![CDATA[эмуляция]]></category><category><![CDATA[open source]]></category>
+	</item>
+
+		<item>
+		<title><![CDATA[[Из песочницы] Мультиквайногенератор]]></title>
+		<guid isPermaLink="true">http://habrahabr.ru/post/188852/</guid>
+		<link>http://habrahabr.ru/post/188852/</link>
+		<description><![CDATA[На хабре месячник квайнов, поэтому хочу поделиться своими разработками, которые проделывал ещё четыре года назад.<br/>
+<br/>
+Хороший мультиквайн — это произведение инженерного искусства, но…<br/>
+При взгляде на очередную порцию «помех на телеграфной линии», у обычного программиста возникает лишь изумление: «как такое вообще возможно», и «кем был тот сумрачный тевтонский гений».<br/>
+Я хочу сорвать покровы и показать, как легко писать мультиквайн любой степени сложности на любом наборе языков программирования, включая вайтспейс и брейнфак.<br/>
+<br/>
+Поскольку мы имеем дело с текстами программ и результатами их исполнения, то было бы естественно взглянуть на это дело как на функции над строками.<br/>
+ <a href="http://habrahabr.ru/post/188852/#habracut">Читать дальше &rarr;</a>]]></description>
+		
+		<pubDate>Sun, 04 Aug 2013 17:11:23 GMT</pubDate>
+		<author>nickolaym</author>
+		<category><![CDATA[Ненормальное программирование]]></category>
+		<category>quine</category>
+	</item>
+
+		<item>
+		<title><![CDATA[Ассембли 2013]]></title>
+		<guid isPermaLink="true">http://habrahabr.ru/post/188930/</guid>
+		<link>http://habrahabr.ru/post/188930/</link>
+		<description><![CDATA[На этих выходных в Финляндии проходил легендарный компьютерный фестиваль <a href="http://www.assembly.org/summer13/">Assembly 2013</a>. Во время 76-часовой онлайн трансляции AssemblyTV мы могли наблюдать за одним из самых больших компьютерных фестивалей в мире, который ежегодно посещают более 5.000 участников, а также более 200 волонтеров работают над его организацей. <br/>
+<br/>
+Ассембли это мероприятие для геймеров, демосценеров и любого кто интересуется цифровой культурой. <br/>
+<br/>
+Трансляция открыта для всего интернета. С её помощью мы можем в живую следить за событиями в <a href="http://en.wikipedia.org/wiki/Hartwall_Areena">Hartwall Areena</a>, виртуально присутствовать на интересных семинарах, смотреть конкурсы на лучшее демо и интро, наблюдать за графическими и музыкальными соревнованиями, участвовать в обсуждении демок в студии AssemblyTV с известными личностями демосцены, смотреть интервью со спонсорами и живые концерты.<br/>
+<br/>
+Главным событием Ассембли традиционно являются конкурсы с демонстрацией визуальных и аудиоэффектов, которые выполняются/просчитываются/воспроизводятся специально написанными программами в realtime.<br/>
+<br/>
+Рад представить вам несколько демо из номинантов этого года:<br/>
+<br/>
+<h2>1k — intro</h2><br/>
+Участвуют демки с максимальным размером до 1 килобайта(!).<br/>
+<br/>
+<iframe width="560" height="349" src="//www.youtube.com/embed/Ju9cf_enqDA?wmode=opaque" frameborder="0" allowfullscreen></iframe><br/>
+<br/>
+ <a href="http://habrahabr.ru/post/188930/#habracut">Читать дальше &rarr;</a>]]></description>
+		
+		<pubDate>Sun, 04 Aug 2013 11:36:12 GMT</pubDate>
+		<author>efimich</author>
+		<category><![CDATA[Game Development]]></category><category><![CDATA[Демосцена]]></category>
+		<category><![CDATA[демо]]></category><category><![CDATA[ассембли]]></category><category><![CDATA[assembly 2013]]></category>
+	</item>
+
+		<item>
+		<title><![CDATA[Японские высокотехнологичные туалеты подвержены «взлому» по Bluetooth]]></title>
+		<guid isPermaLink="true">http://habrahabr.ru/post/188922/</guid>
+		<link>http://habrahabr.ru/post/188922/</link>
+		<description><![CDATA[<img src="http://habrastorage.org/storage2/370/17d/6a5/37017d6a5e0ddd96fc821c3331a8da1d.jpg"/><br/>
+<br/>
+Жаль, на Хабре не осталось хаба, куда можно постить записи юмористической направленности. в общем-то, новость вполне серьезная, если бы не тематика. Речь идет о высокотехнологичных японских туалетах, до которых микроволновкам со встроенным модулем доступа к Сети очень далеко. Эти туалеты могут управляться по Bluetooth, и специалисты по информационной безопасности из Trustwave уже обнаружили уязвимость.<br/>
+<br/>
+ <a href="http://habrahabr.ru/post/188922/#habracut">Читать дальше &rarr;</a>]]></description>
+		
+		<pubDate>Sun, 04 Aug 2013 09:25:49 GMT</pubDate>
+		<author>marks</author>
+		<category><![CDATA[Беспроводные технологии]]></category><category><![CDATA[Информационная безопасность]]></category>
+		<category><![CDATA[satis]]></category><category><![CDATA[япония]]></category><category><![CDATA[bluetooth]]></category>
+	</item>
+
+
+
+</channel>
+</rss>
+

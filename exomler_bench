@@ -1,0 +1,58 @@
+#!/usr/bin/env escript
+
+-mode(compile).
+
+-define(READY(Name, MinTime, Time),
+    {ready, Name, MinTime, Time, process_info(self(), memory)}
+).
+
+main([Path]) ->
+    main([Path, "100"]);
+
+main([Path, Count_]) ->
+    Count = list_to_integer(Count_),
+    {ok,Bin} = file:read_file(Path),
+    List = binary_to_list(Bin),
+    code:add_pathz("ebin"),
+    code:add_pathz("deps/erlsom/ebin"),
+    code:add_pathz("deps/parsexml/ebin"),
+    code:add_pathz("deps/exomler/ebin"),
+    Self = self(),
+    spawn(fun() -> {Time, MinTime} = timer:tc(fun loop/3, [[xmerl_scan, string, [List]], Count, 100000000]), Self ! ?READY(xmerl, MinTime, Time)  end),
+    spawn(fun() -> {Time, MinTime} = timer:tc(fun loop/3, [[erlsom, simple_form, [Bin]], Count, 100000000]), Self ! ?READY(erlsom, MinTime, Time)  end),
+    %spawn(fun() -> {Time, MinTime} = timer:tc(fun loop/3, [[parsexml, parse,     [Bin]], Count, 100000000]), Self ! ?READY(parsexml, MinTime, Time)  end),
+    spawn(fun() -> {Time, MinTime} = timer:tc(fun loop/3, [[exomler, decode,     [Bin]], Count, 100000000]), Self ! ?READY(exomler, MinTime, Time)  end),
+
+    Size = Count * size(Bin),
+    io:format("----------------------------------------------------~n"),
+    io:format("~8.. s ~11.. s ~11.. s ~9.. s ~9.. s~n", ["parser", "min time", "all time", "memory", "speed"]),
+    io:format("----------------------------------------------------~n"),
+    receive
+        {ready,   xmerl,MinT1,T1,{memory,M1}} ->
+            io:format("   xmerl ~8.. Bmcs ~8.. Bmls ~7.. BKB ~5.. BMB/s~n", [MinT1, T1 div 1000,M1 div 1024, Size div T1])
+    end,
+    receive
+        {ready,  erlsom,MinT2,T2,{memory,M2}} ->
+            io:format("  erlsom ~8.. Bmcs ~8.. Bmcs ~7.. BKB ~5.. BMB/s~n", [MinT2, T2 div 1000,M2 div 1024, Size div T2])
+    end,
+    %receive
+    %    {ready,parsexml,MinT3,T3,{memory,M3}} ->
+    %        io:format("parsexml ~8.. Bmcs ~8.. Bmls ~7.. BKB ~5.. BMB/s~n", [MinT3, T3 div 1000,M3 div 1024, Size div T3])
+    %end,
+    receive
+        {ready, exomler,MinT4,T4,{memory,M4}} ->
+            io:format(" exomler ~8.. Bmcs ~8.. Bmls ~7.. BKB ~5.. BMB/s~n", [MinT4, T4 div 1000,M4 div 1024, Size div T4])
+    end,
+    io:format("----------------------------------------------------~n"),
+    ok.
+
+loop(_Args, 0, MinTime) ->
+    MinTime;
+loop([M, F, A] = Args, Count, MinTime1) ->
+    {MinTime2, _A} = timer:tc(M, F, A),
+    case MinTime1 >= MinTime2 of 
+        true ->
+            loop(Args, Count-1, MinTime2);
+        false ->
+            loop(Args, Count-1, MinTime1)
+    end.
