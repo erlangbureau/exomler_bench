@@ -18,12 +18,12 @@ main([Path, Count_]) ->
     List = binary_to_list(Bin),
     code:add_pathz("ebin"),
     code:add_pathz("deps/erlsom/ebin"),
-    code:add_pathz("deps/parsexml/ebin"),
     code:add_pathz("deps/exomler/ebin"),
     code:add_pathz("deps/exmpp/ebin"),
+    code:add_pathz("deps/mochiweb/ebin"),
 %    exmpp_xml:start(),
     Self = self(),
-    spawn(fun() ->  
+   spawn(fun() ->  
         {Time, MinTime} = timer:tc(fun loop/3, [[xmerl_scan, string, [List]], Count, ?MinTime]), 
         Self ! ?READY(xmerl,    MinTime, Time)  
     end),
@@ -43,10 +43,14 @@ main([Path, Count_]) ->
 %        {Time, MinTime} = timer:tc(fun loop/3, [[exmpp_xml, parse_document, [Bin, [{engine, libxml2}]]], Count, ?MinTime]),
 %        Self ! ?READY(libxml2,  MinTime, Time)  
 %    end),
+    spawn(fun() ->
+        {Time, MinTime} = timer:tc(fun loop/3, [[mochiweb_html, parse, [Bin]], Count, ?MinTime]), 
+        Self ! ?READY(mochiweb,  MinTime, Time)  
+    end),
 
     Size = Count * size(Bin),
     io:format("-------------------------------------------------------~n"),
-    io:format("~11.. s ~11.. s ~11.. s ~9.. s ~9.. s~n", ["parser", "min time", "all time", "memory", "speed"]),
+    io:format("~11.. s ~11.. s ~11.. s ~9.. s ~9.. s~n", ["parser", "min time", "total time", "memory", "speed"]),
     io:format("-------------------------------------------------------~n"),
     receive
         {ready,   xmerl,MinT1,T1,{memory,M1}} ->
@@ -62,12 +66,16 @@ main([Path, Count_]) ->
     end,
 %    receive
 %        {ready,   expat,MinT4,T4,{memory,M4}} ->
-%            io:format("libexpat.so ~8.. Bmcs ~8.. Bmls ~7.. BKB ~4.. BMB/s~n", [MinT4, T4 div 1000,M4 div 1024, Size div T4])
+%            io:format("libexpat.so ~8.. Bmcs ~8.. Bmls ~7.. BKB ~5.. BMB/s~n", [MinT4, T4 div 1000,M4 div 1024, Size div T4])
 %    end,
 %    receive
 %        {ready, libxml2,MinT5,T5,{memory,M5}} ->
 %            io:format(" libxml2.so ~8.. Bmcs ~8.. Bmls ~7.. BKB ~5.. BMB/s~n", [MinT5, T5 div 1000,M5 div 1024, Size div T5])
 %    end,
+    receive
+        {ready,mochiweb,MinT6,T6,{memory,M6}} ->
+            io:format("   mochiweb ~8.. Bmcs ~8.. Bmls ~7.. BKB ~5.. BMB/s~n", [MinT6, T6 div 1000,M6 div 1023, Size div T6])
+    end,
     io:format("-------------------------------------------------------~n"),
     ok.
 
